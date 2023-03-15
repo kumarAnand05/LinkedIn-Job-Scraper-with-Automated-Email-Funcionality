@@ -71,3 +71,4 @@ Simply open the whole Job scraper folder in your IDE and run the main.py file to
 + Do not click on any element of the webpage as it can lead to termination of the code.
 + Do not use console during the process.
 + Do not turn off internet or close the automated browser session.
++ To prevent any unexpected action against your LinkedIn account, please do not have your browser logged in to LinkedIn which you are going to automate. Care to logout before running the scraper.
