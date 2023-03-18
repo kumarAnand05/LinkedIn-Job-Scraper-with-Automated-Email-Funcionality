@@ -162,6 +162,7 @@ while len(company_name) < no_of_jobs:
                     time.sleep(1)
                     limit += 1
                     if limit == 5:
+                        print('Poor network connection. Unable to scan one job detail.Bypassing...')
                         return 'Null'
                     continue
 
@@ -184,7 +185,7 @@ while len(company_name) < no_of_jobs:
                 add_job_detail()
                 unexpected_error = 0
 
-        elif exp_level.strip().capitalize() not in experiences and 'Not applicable' in desired_experience_level:
+        elif exp_level.strip().capitalize() not in experiences and 'Not applicable' in desired_experience_level and exp_level!= 'Null':
             if advanced_filtering:
                 if deep_filter():
                     add_job_detail()
