@@ -161,6 +161,8 @@ while len(company_name) < no_of_jobs:
                     job.click()
                     time.sleep(1)
                     limit += 1
+                    if limit == 5:
+                        return 'Null'
                     continue
 
         # To find the experience level of the listed job
