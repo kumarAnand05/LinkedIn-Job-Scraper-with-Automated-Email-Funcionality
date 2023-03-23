@@ -60,3 +60,11 @@ def filtering():
         return True
     else:
         return False
+
+
+def internet_speed():
+    pause = input('Is your internet connection slow? (Y/N)').lower()
+    if pause == 'y':
+        return 2
+    else:
+        return 1
