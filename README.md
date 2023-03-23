@@ -5,7 +5,7 @@ By Anand Kumar
 ## Features
 * **Fast Scrapping** : Quickly extracts job data from LinkedIn
 * **Advanced Job description filtering** : Scans each job description, filters out jobs which doesn't matches your year of experience.
-* **Adjustability to slow network** : Code can be easily modified in case your internet connection is slow.
+* **Adjustability to slow network** : Auto optimization to slow internet connection with a single user input.
 * **Reduced bot action detection** :  Mitigates the risk of being detected as a bot during data scraping.
 * **Automated emailing functionality of scrapped data** : Sends scrapped data to designated email addresses automatically.
 
