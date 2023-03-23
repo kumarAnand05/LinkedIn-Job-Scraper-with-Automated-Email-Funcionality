@@ -42,7 +42,7 @@ driver.get("https://www.linkedin.com/jobs/search?keywords=&location=&geoId=&trk=
 # Internet Speed Adjustment
 very_short_pause = 1 * t
 short_pause = 2 * t
-long_pause = 2 * t
+long_pause = 5 * t
 
 # Closing sign-in prompt
 try:
