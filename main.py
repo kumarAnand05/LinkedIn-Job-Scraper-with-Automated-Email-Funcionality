@@ -25,6 +25,8 @@ advanced_filtering = ui.filtering()
 if advanced_filtering:
     maximum_months_of_experience = int(input('Enter the number of months of experience you have: '))
 
+# To optimize internet speed
+t = ui.internet_speed()
 
 # Setting up webdriver
 browser_options = Options()
@@ -37,6 +39,10 @@ driver = webdriver.Chrome(options=browser_options)
 driver.maximize_window()
 driver.get("https://www.linkedin.com/jobs/search?keywords=&location=&geoId=&trk=public_jobs_jobs-search-bar_search-submit&position=1&pageNum=0")
 
+# Internet Speed Adjustment
+very_short_pause = 1 * t
+short_pause = 2 * t
+long_pause = 2 * t
 
 # Closing sign-in prompt
 try:
@@ -52,19 +58,19 @@ except (TimeoutException, NoSuchElementException):
 # -- Entering Title input
 job_title_area = driver.find_element(By.XPATH, x.title_box())
 job_title_area.send_keys(job_role)                                                   # Entering user input for Job Title
-time.sleep(2)
+time.sleep(short_pause)
 
 # -- Entering Location Input
 location_area = driver.find_element(By.XPATH, x.location_box())
 location_area.click()
 location_area.clear()
-time.sleep(2)
+time.sleep(short_pause)
 location_area.send_keys(job_location)
-time.sleep(2)
+time.sleep(short_pause)
 
 search_icon = driver.find_element(By.XPATH, x.search())
 search_icon.click()
-time.sleep(5)                                                               # Wait time for site reload after submission
+time.sleep(long_pause)                                                               # Wait time for site reload after submission
 
 # -- Selecting the job listing time
 # ---- finding location of Date posted selection filter button from filter menu
@@ -80,7 +86,7 @@ for pos in range(1, 7):                          # Looping to match xpath text o
     else:
         filter_pos += 1
 listing_time.click()
-time.sleep(2)
+time.sleep(short_pause)
 
 # -- selecting user input
 desired_listing_time = 'Null'
@@ -93,7 +99,7 @@ for s in range(1, 5):
     # NOTE: Split function is used as the text are of the form Any Time (24,458)
 
 desired_listing_time.click()
-time.sleep(2)
+time.sleep(short_pause)
 time_done_button = driver.find_element(By.XPATH, x.time_done(filter_pos))
 time_done_button.click()
 
@@ -112,7 +118,7 @@ def deep_filter():
     except TimeoutException:
         return False
     except StaleElementReferenceException:
-        time.sleep(4)
+        time.sleep(long_pause)
         deep_filter()
 
 
@@ -146,7 +152,7 @@ while len(company_name) < no_of_jobs:
         # Function to click on previous job in case side pane of current selected job doesn't load up
         def timeout_recursion():
             limit = 1
-            while limit <= 5:    # Increase loop value in case of slow network or increase the wait time in except block
+            while limit <= long_pause:    # Increase loop value in case of slow network or increase the wait time in except block
                 try:
                     xp = WebDriverWait(driver, 5).until((ec.element_to_be_clickable((By.XPATH, x.level()))))
                     return xp.text
@@ -157,9 +163,9 @@ while len(company_name) < no_of_jobs:
                         prev_job = driver.find_element(By.XPATH, x.jobs(i + 1))
     
                     prev_job.click()
-                    time.sleep(1)
+                    time.sleep(very_short_pause)
                     job.click()
-                    time.sleep(1)
+                    time.sleep(very_short_pause)
                     limit += 1
                     if limit == 5:
                         print('Poor network connection. Unable to scan one job detail.Bypassing...')
@@ -178,10 +184,12 @@ while len(company_name) < no_of_jobs:
         if exp_level.strip().capitalize() in desired_experience_level:
             if advanced_filtering:
                 if deep_filter():
+                    time.sleep(very_short_pause)
                     add_job_detail()
                     print(f'{len(company_name)} jobs found from {i} scanned jobs.')
                     unexpected_error = 0
             else:
+                time.sleep(very_short_pause)
                 add_job_detail()
                 unexpected_error = 0
 
@@ -213,7 +221,7 @@ while len(company_name) < no_of_jobs:
             try:
                 see_more_jobs = driver.find_element(By.XPATH, x.show_more())
                 see_more_jobs.click()
-                time.sleep(5)
+                time.sleep(long_pause)
 
             # In case it is not interactable it means the list hasn't ended
             except ElementNotInteractableException:
