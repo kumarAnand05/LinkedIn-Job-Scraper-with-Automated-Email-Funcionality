@@ -44,7 +44,8 @@ def level():
 
 
 def show():
-    show_xpath = '//button[@class="show-more-less-html__button show-more-less-html__button--more"]'
+    show_xpath = '/html/body/div[1]/div/section/div[2]/div/section[1]/div/div/section/button[1]'
+
     return show_xpath
 
 
@@ -71,3 +72,4 @@ def description():
 def show_more():
     show_more_xpath = '//*[@id="main-content"]/section[2]/button'
     return show_more_xpath
+    
