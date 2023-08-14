@@ -21,7 +21,7 @@ Install Selenium python on your machine using command line/terminal. For any ins
 
 > Download Selenium Webdriver
 
-The code is written for automation of Chrome browser, however the code can be used to automate Edge Browser, Firefox and Safari as well by modifying the code line 38 of main.py file `driver = webdriver.Chrome(options=browser_options)` according to the browser of choice.
+The code is written for automation of Chrome browser, however the code can be used to automate Edge Browser, Firefox and Safari as well by modifying the code line 52 of main.py file `driver = webdriver.Chrome(options=browser_options)` according to the browser of choice.
 
 If you do not want to change any code then first [Download Chrome](https://www.google.com/chrome) on you system then follow instruction below.
 Go to settings in chrome > then go to about chrome
