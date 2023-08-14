@@ -12,7 +12,7 @@ By Anand Kumar
 # Instructions
 After you have downloaded the project files. Follow the insctructions below to setup your machine to make code functional.
 ## Downloading/Installing dependencies 
-Of course you need to [Python](https://www.python.org/) installed on your machine, along with it you need to install/download some other packages on your machine which are mentioned below.
+Of course you need [Python](https://www.python.org) and an IDE like [VSCode](https://code.visualstudio.com), [PyCharm](https://www.jetbrains.com/pycharm) etc. installed on your machine. Along with it you need to install/download some other packages on your machine which are mentioned below.
 
 > Install Selenium Python
 
@@ -60,6 +60,8 @@ For eg. `passcode = 'yourapppasscode'`
 
 Simply open the whole Job scraper folder in your IDE and run the main.py file to start LinkedIn Job Scraper. After entering the required input in the console, the browser will automatically begin scraping job listings based on the specified criteria. The browser closes automatically after the code completes running successfully.
 
+> `How to comment or uncomment any line?` : Simply click on the line that you want to comment or uncomment and with Ctrl/⌘ pressed on keyboard click forward slash key '/' on the keyboard.
+ 
 ## Do's and Don'ts
 > Do's
 
