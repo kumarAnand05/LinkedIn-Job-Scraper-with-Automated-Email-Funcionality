@@ -31,7 +31,7 @@ Now note the build version of your chrome
   <img src="https://user-images.githubusercontent.com/111251492/225451710-6cde0e57-71a0-42aa-a0a0-8d5f663a6ecd.png">
 </p>
 
-For example say build version is 111.0.5563.65. Then visit [selenium webdriver page for chrome](https://chromedriver.chromium.org/downloads) From their download the latest version of zip file of webdriver for your operating system whose start version is same as your Chrome build version (in this case 111). Then unzip the folder open it then copy the path location of the folder on your local machine. For Example "C:\Users\Anand\Downloads\webdriver". Paste this location within quotes of line 37 of main.py file `os.environ['PATH'] += r'C:\Users\Anand\Downloads\webdriver'`
+For example say build version is 111.0.5563.65. Then visit [selenium webdriver page for chrome](https://chromedriver.chromium.org/downloads) From their download the latest version of zip file of webdriver for your operating system whose start version is same as your Chrome build version (in this case 111). Then unzip the folder open it then copy the path location of the folder on your local machine. For Example "C:\Users\Anand\Downloads\webdriver". Paste this location within quotes of line 51 of main.py file `os.environ['PATH'] += r'C:\Users\Anand\Downloads\webdriver'`
 
 
 > Install Pandas
@@ -40,9 +40,9 @@ Install the Pandas library on your machine using command line/terminal. For any 
 
 ## Email Account Setup
 
-Note that you need to have two mail ids for this functionality so in case you don't have two mail accounts then create it.Open the mail_system.py file in your IDE and in line 7 enter the email id which you want to use as sender within quotes.
+Note that you need to have two mail ids for this functionality so in case you don't have two mail accounts then create it.Open the mail_system.py file in your IDE and in line 22 enter the email id which you want to use as sender within quotes.
 
-For eg. `user_mail = 'yourmailid@goeshere.com'` and in line 9 provide the mail id within quotes on which you want to receive the Scrapped Data. For eg. `recipient = 'receivingmailid@goeshere.com'`
+For eg. `user_mail = 'yourmailid@goeshere.com'` and in line 24 provide the mail id within quotes on which you want to receive the Scraped Data. For eg. `recipient = 'receivingmailid@goeshere.com'`
 
 > Setting passcode of sender's mail
 
@@ -51,7 +51,7 @@ The mail functionality is supported by the SMTP (Simple Mail Transfer Protocol) 
 + [For Yahoo Mail](https://help.yahoo.com/kb/generate-manage-third-party-passwords-sln15241.html)
 + [For Outlook](https://support.microsoft.com/en-us/account-billing/using-app-passwords-with-apps-that-don-t-support-two-step-verification-5896ed9b-4263-e681-128a-a6f2979a7944)
 
-After you have created the app password. Enter the password in line 8 of mail_system.py file within quotes.
+After you have created the app password. Enter the password in line 23 of mail_system.py file within quotes.
 
 For eg. `passcode = 'yourapppasscode'`
 
