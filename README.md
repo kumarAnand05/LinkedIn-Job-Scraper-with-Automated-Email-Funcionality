@@ -2,12 +2,16 @@
 <img align="right" width="100" height="100" src="https://user-images.githubusercontent.com/111251492/225376166-b814df59-814b-448e-b85d-90f3a7ee4ac6.png">
 By Anand Kumar
 
+
 ## Features
 * **Fast Scrapping** : Quickly extracts job data from LinkedIn
 * **Advanced Job description filtering** : Scans each job description, filters out jobs which doesn't matches your year of experience.
 * **Adjustability to slow network** : Auto optimization to slow internet connection with a single user input.
 * **Reduced bot action detection** :  Mitigates the risk of being detected as a bot during data scraping.
 * **Automated emailing functionality of scrapped data** : Sends scrapped data to designated email addresses automatically.
+
+### ⚠️NOTE : 
+I want to make it clear that I strongly discourage any attempts to scrape data from LinkedIn. If anyone is considering such actions, I urge them to first review [LinkedIn's official policy](https://www.linkedin.com/help/linkedin/answer/a1341387/prohibition-of-scraping-software?lang=en-us&intendedLocale=en) regarding the use of scraping software, as outlined in their statement. This project was carried out as a implentaion of knowledge during my learning journey and not to use the the LinkedIn data for any unauthorized usage and this project should not be used for any attempt to do so.
 
 # Instructions
 After you have downloaded the project files. Follow the insctructions below to setup your machine to make code functional.
