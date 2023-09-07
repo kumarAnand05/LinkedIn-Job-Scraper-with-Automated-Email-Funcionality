@@ -11,7 +11,7 @@ By Anand Kumar
 * **Automated emailing functionality of scrapped data** : Sends scrapped data to designated email addresses automatically.
 
 ### ⚠️NOTE : 
-I want to make it clear that I strongly discourage any attempts to scrape data from LinkedIn. If anyone is considering such actions, I urge them to first review [LinkedIn's official policy](https://www.linkedin.com/help/linkedin/answer/a1341387/prohibition-of-scraping-software?lang=en-us&intendedLocale=en) regarding the use of scraping software, as outlined in their statement. This project was carried out as a implentaion of knowledge during my learning journey and not to use the the LinkedIn data for any unauthorized usage and this project should not be used for any attempt to do so.
+I want to make it clear that I strongly discourage any attempts to scrape data from LinkedIn. If anyone is considering such actions, I urge them to first review [LinkedIn's official policy](https://www.linkedin.com/help/linkedin/answer/a1341387/prohibition-of-scraping-software?lang=en-us&intendedLocale=en) regarding the use of scraping software, as outlined in their statement. This project was carried out as a implementation of knowledge during my learning journey and not to use the the LinkedIn data for any unauthorized usage and this project should not be used for any attempt to do so.
 
 # Instructions
 After you have downloaded the project files. Follow the insctructions below to setup your machine to make code functional.
