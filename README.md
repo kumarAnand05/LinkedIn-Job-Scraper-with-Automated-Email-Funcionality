@@ -14,7 +14,7 @@ By Anand Kumar
 I want to make it clear that I strongly discourage any attempts to scrape data from LinkedIn. If anyone is considering such actions, I urge them to first review [LinkedIn's official policy](https://www.linkedin.com/help/linkedin/answer/a1341387/prohibition-of-scraping-software?lang=en-us&intendedLocale=en) regarding the use of scraping software, as outlined in their statement. This project was carried out as a implementation of knowledge during my learning journey and not to use the the LinkedIn data for any unauthorized usage and this project should not be used for any attempt to do so.
 
 # Instructions
-After you have downloaded the project files. Follow the insctructions below to setup your machine to make code functional.
+After you have downloaded the project files. Follow the instructions below to setup your machine to make code functional.
 ## Downloading/Installing dependencies 
 Of course you need [Python](https://www.python.org) and an IDE like [VSCode](https://code.visualstudio.com), [PyCharm](https://www.jetbrains.com/pycharm) etc. installed on your machine. Along with it you need to install/download some other packages on your machine which are mentioned below.
 
@@ -66,7 +66,7 @@ Simply open the whole Job scraper folder in your IDE and run the main.py file to
 
 > `How to comment or uncomment any line?` : Simply click on the line that you want to comment or uncomment and with Ctrl/⌘ pressed on keyboard click forward slash key '/' on the keyboard.
  
-## Do's and Don'ts
+## Dos and Don'ts
 > Do's
 
 + You can use your machine during the process.
